@@ -1,16 +1,7 @@
-function solution(n) {
-    let str = '';
-    if (n === 1) {
-        return '수';
-    } else {
-        for (let i = 1; i <= n / 2; i++) {
-            str += '수박';
-        }
-        if (n % 2 === 1) {
-            str += '수';
-        }
-
+function solution(a, b) {
+    let sum = 0;
+    for(let i = 0; i < a.length; i++) {
+        sum += a[i]*b[i]
     }
-
-    return str;
+    return sum;
 }

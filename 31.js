@@ -1,7 +1,16 @@
-function solution(s) {
-    if (s.length % 2 === 0) {
-        return s.slice(s.length / 2 - 1, s.length / 2 + 1);
+function solution(n) {
+    let str = '';
+    if (n === 1) {
+        return '수';
     } else {
-        return s[Math.floor(s.length / 2)];
+        for (let i = 1; i <= n / 2; i++) {
+            str += '수박';
+        }
+        if (n % 2 === 1) {
+            str += '수';
+        }
+
     }
+
+    return str;
 }
