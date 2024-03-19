@@ -7,9 +7,7 @@ function solution(lottos, win_nums) {
             count++;
         } else if (lottos[i] === 0)
             countZero++;
-
     }
-
     return [countRank(count + countZero), countRank(count)];
 }
 
